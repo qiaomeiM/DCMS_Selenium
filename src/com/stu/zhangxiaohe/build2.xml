@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testsuite" parallel="tests" thread-count="3">
+	
+	<test name="fftest">
+		<classes>
+			<class name="com.stu.zhangxiaohe.DotestListener"/>
+		</classes>
+	</test>
+	<test name="ffftest">
+		<classes>
+			<class name="com.stu.zhangxiaohe.Mimemassage1"/>
+		</classes>
+	</test>
+</suite>

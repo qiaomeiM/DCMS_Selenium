@@ -1,0 +1,5 @@
+email	password	password2	username
+0424@qq.com	123456	123456	bie
+1997@qq.com	123456	12345	sha
+1996@qq.com	12345	12345	wo
+1995	123456	123456	en

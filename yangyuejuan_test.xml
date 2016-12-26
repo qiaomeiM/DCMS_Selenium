@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 杨跃娟   -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testuite">
+
+	<test name="fftest">
+		<classes>
+			<class name="com.stu.yangyuejuan.AddFood" />
+		</classes>
+	</test>
+
+</suite>

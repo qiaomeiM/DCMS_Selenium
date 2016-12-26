@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testsuite" parallel="tests" thread-count="3">
+	<test name="fftest">
+		<classes>
+			<class name="com.liya.dcms.FrontdeskRegiter" />
+		</classes>
+	</test>	
+</suite>

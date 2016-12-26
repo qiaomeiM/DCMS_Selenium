@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name ="javacTest" default="run" basedir=".">
+	
+	 <!-- 定义全局变量 -->
+	<property name="dest" value="./build/classes" />
+	<property name="testng.output.dir" value="./test-output"/>
+	 <!-- 定义类路径 -->
+	<path id="classes">
+	     <fileset dir="lib" includes="*.jar"/>
+		 <pathelement location="${dest}"/>
+		 <pathelement location="./resource/" />
+	</path>
+	
+	<taskdef resource="testngtasks" classpath="lib/testng-6.9.9.jar"/>  
+   
+    <target name="clean">
+        <delete dir="${dest}"/>
+    </target>
+    <!-- 编译 src目录 -->
+    <target name="compile"  depends ="clean">
+        <mkdir dir ="${dest}"/>
+    	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on">
+    <compilerarg line="-encoding UTF-8"/>
+    	  </javac> 
+    </target>
+    <!-- 运行 -->
+    <target name="run"  depends ="compile">
+     	   	<testng outputdir="${testng.report.dir}" classpathref="classes" >
+    	  	 <xmlfileset dir="." includes="testng2.xml"/>
+    	  	</testng>
+    </target>
+</project>

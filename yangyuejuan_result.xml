@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 杨跃娟   监听器 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testsuite">
+	<listeners>
+	<listener class-name="com.stu.yangyuejuan.WebTestListener"></listener>
+	</listeners>
+	<test name="fftest">
+		<classes>
+			<class name="com.stu.yangyuejuan.Login" />
+		</classes>
+	</test>
+</suite>

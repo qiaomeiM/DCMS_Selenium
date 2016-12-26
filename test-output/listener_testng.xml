@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Simple Logger Suite">
+  <listeners>
+    <listener class-name="com.webtest.core.WebTestListener" />
+  </listeners>
+
+  <test name="Simple Logger test">
+    <classes>
+      <class name="com.stu.qiaomei.LoginTXT" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testsuite" parallel="tests" thread-count="3">
+	<test name="ftest">
+		<classes>
+			<class name="com.stu.zhangxiaohe.login4" />
+		</classes>
+	</test>	
+</suite>
